@@ -12,6 +12,15 @@ recommended, copy the [sample configuration file](./.leds) next to the binary
 `/home/pi/.leds`).
 
 
+USAGE
+--
+
+Just run `./leds <color> <color> <color>` to set first three leds with a color.
+Possible notations for red color: `#ff0000`, `#f00`, `ff0000`, `red`. To turn a
+led off just set it's color to `black`. To dim a led set the color to something
+less bright (like `#010101`).
+
+
 
 BUILD
 --
