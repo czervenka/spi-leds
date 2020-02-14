@@ -57,6 +57,23 @@ fn setup() -> Settings {
 fn main() {
     let settings = setup();
 	let args: Vec<String> = env::args().collect();
+    if args.len() == 1 {
+        println!(r#"
+    USAGE:
+        leds <led1-color> [<led2-color> [<led3-color> [...]]]
+
+        ... the colors can be in web format '#aabbcc' or simplified '#abc' or even without hash
+            'aabbcc' or a named color like 'red'
+
+        ... to setup data and clock pin set environment variables BLINK_DATA and BLINK_CLOCK or
+            create '.leds' configuration file in TOML format.
+
+            .leds file example:
+            > data_pin = 13
+            > clock_pin = 15
+        "#);
+        return;
+    }
 	let strip_size = args.len() - 1;	
 	let mut blinkt;
     match Blinkt::with_settings(settings.data_pin, settings.clock_pin, strip_size) {
