@@ -1,3 +1,14 @@
+QUICK USAGE
+--
+
+On Raspberry run
+
+    curl https://github.com/czervenka/spi-leds/releases/download/0.2.0/leds && ./leds f00 0f0 00f
+
+if you are using different GPIO than standard SPI, call the leds with :
+
+    BLINK_DATA=<data_gpio_pin_number> BLINK_CLOCK=<clock_gpio_pin_number> ./leds ...
+
 INSTALLATION
 ---
 
