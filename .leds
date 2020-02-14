@@ -1,2 +1,4 @@
+# GPIO pin number connected to data on your led strip
 data_pin = 18
+# GPIO pin number connected to clock (or clk) on your led strip
 clock_pin = 15
