@@ -3,7 +3,7 @@ QUICK USAGE
 
 On Raspberry run
 
-    curl -L https://github.com/czervenka/spi-leds/releases/download/0.2.0/leds --output leds && ./leds f00 0f0 00f
+    curl -L https://github.com/czervenka/spi-leds/releases/download/0.2.0/leds --output leds && chmod +x ./leds && ./leds f00 0f0 00f
 
 if you are using different GPIO than standard SPI, call the leds with :
 
