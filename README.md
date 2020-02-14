@@ -2,7 +2,7 @@ INSTALLATION
 ---
 
 Download latest version of
-[leds](https://github.com/czervenka/spi-leds/releases/download/v0.1.0/leds)
+[leds](https://github.com/czervenka/spi-leds/releases/latest)
 file and copy it to your Raspberry.
 
 If you led strip is not connected to default GPIO pins dedicated for SPI as
